@@ -1,3 +1,4 @@
+function task5(){
 function elements (quantity){
     var element = [];
     
@@ -18,4 +19,6 @@ function elements (quantity){
     }
     return alert('Максимальное - ' + maxEl + '. Минимальное - ' + minEl + '. Сумма = ' + sumEl)
 
+}
+elements(prompt ('Введи кол-во элементов'))
 }
