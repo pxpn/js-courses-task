@@ -1,4 +1,4 @@
-var elements = function(quantity){
+function elements (quantity){
     var element = [];
     
     for (var i = 0; i < quantity; i++) {
