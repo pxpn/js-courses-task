@@ -16,11 +16,9 @@ function elements (quantity){
             maxEl = element[i];
         }
         sumEl += +element[i];
-        console.log(minEl)
-        console.log(maxEl)
-        console.log(sumEl)
     }
     return alert('Максимальное - ' + maxEl + '. Минимальное - ' + minEl + '. Сумма = ' + sumEl)
 }
 elements(prompt ('Введи кол-во элементов'))
+
 }
