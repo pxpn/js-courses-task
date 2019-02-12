@@ -19,4 +19,3 @@ function elements (quantity){
     return alert('Максимальное - ' + maxEl + '. Минимальное - ' + minEl + '. Сумма = ' + sumEl)
 
 }
-elements(prompt ('Введи кол-во элементов'))
