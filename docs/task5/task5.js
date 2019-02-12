@@ -5,15 +5,15 @@ function elements (quantity){
     for (var i = 0; i < quantity; i++) {
         element [i] = prompt ('Введи элемент')
     }
+    var sumEl = 0;
     var minEl = element[0];
     var maxEl = element[0];
-    var sumEl = 0;
-    for (var i = 0; i < quantity; i++) {
+    for (var i = 0; i < element.length; i++) {
         if (element[i] < minEl){
             minEl = element[i];
-        } else {
-            maxEl = element[i];
         }
+        if (element[i] > maxEl) {
+            maxEl = element[i];
         }
         sumEl += +element[i];
         console.log(minEl)
