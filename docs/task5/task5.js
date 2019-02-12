@@ -11,14 +11,16 @@ function elements (quantity){
     for (var i = 0; i < quantity; i++) {
         if (element[i] < minEl){
             minEl = element[i];
-        }
-        if (element[i] > maxEl){
+        } else {
             maxEl = element[i];
         }
+        }
         sumEl += +element[i];
+        console.log(minEl)
+        console.log(maxEl)
+        console.log(sumEl)
     }
     return alert('Максимальное - ' + maxEl + '. Минимальное - ' + minEl + '. Сумма = ' + sumEl)
-
 }
 elements(prompt ('Введи кол-во элементов'))
 }
