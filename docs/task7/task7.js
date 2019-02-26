@@ -1,17 +1,19 @@
 function task7() {
-    var text = prompt('введти текст');
-    var delayTime = +prompt('введи задержку')
-
-    function mymessage(){
-        alert('Сообщение: ' + text);
+    function delay(text, time) {
+        return function(){
+            var context = this;
+            var args = arguments;
+            setTimeout(function(){
+                text.apply(context, args);
+            }, time);
+        }
     }
-   
-    function delay(message, time) {
-        setTimeout(message, time);
-      }
-    
-    var displayMessage = delay(mymessage, delayTime)
-   
-      
+    function text(text){
+        console.log('Сообщение: ' + text);
+    }
+    var text1500 = delay(text, 1500);
+    var text2500 = delay(text, 2500);
+    text1500("тест1");
+    text2500("тест2");
 
 }
